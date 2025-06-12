@@ -104,7 +104,7 @@ If you see this message, then Docker is working correctly.
 The purpose of this exercise is to try to build your own image and run it and thereby get familiar with the duality of images and containers.
 
 1. Create a new directory somewhere in the WSL filesystem e.g. `/~/exercise-2` and move into it.
-2. Write a small hello-world application in a language of your choice (as long as there is a runtime Docker image for it, e.g. [Python](https://hub.docker.com/_/python)).
+2. Write a small hello-world application in a language of your choice (as long as there is a runtime Docker image for it, e.g. [Python](https://hub.docker.com/_/python) or [.NET](mcr.microsoft.com/dotnet/runtime:8.0.17)).
 3. Create a Dockerfile and base it on the runtime Docker image.
 4. Copy the application into the image.
 5. Make sure your Dockerfile executes the application.
@@ -115,7 +115,7 @@ $ docker build -t my-python-app .
 $ docker run -it --rm --name my-running-app my-python-app
 ```
 
-### Exercise 3: Registries
+### Exercise 3: Local registry and tags
 
 1. Pull an image you have not yet worked with from the [Docker hub](https://hub.docker.com), e.g. [PostgresSQL](https://hub.docker.com/r/bitnami/postgresql).
 2. List all images in your local registry.
@@ -139,3 +139,17 @@ exercise-4/
 
 3. Define the `version`, `services`, `volumes` and `networks` sections of the `docker-compose.yml` file.
 4. Bring up the containers using `docker compose up --build`.
+   
+## Solutions
+
+### Solution 2
+
+tilføj her.
+
+### Solution 3
+
+tilføj her.
+
+### Solution 4
+
+Tilføj her.
