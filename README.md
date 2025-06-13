@@ -123,7 +123,7 @@ $ docker run -it --rm --name my-running-app my-python-app
 4. List all images in your local registry again. What do you see?
 5. Remove the older version from your local registry again.
 6. Tag the image you built in the previous exercise with a tag of your choice.
-7. Push your image to ... #TODO
+7. List all images in your local registry again. What do you see now?
 
 ### Exercise 4: Docker Compose
 
@@ -144,11 +144,89 @@ exercise-4/
 
 ### Solution 2
 
-tilføj her.
+<b> Python solution <b>
+
+```bash
+# Create the exercise directory
+$ mkdir -p ~/exercise-2
+$ cd ~/exercise-2
+
+# Create a Python hello-world app
+$ cat <<EOF > app.py
+print("Hello from Docker!")
+EOF
+
+# Create the Dockerfile
+$ cat <<EOF > Dockerfile
+FROM python:3-slim
+
+WORKDIR /app
+
+COPY app.py .
+
+CMD ["python", "app.py"]
+EOF
+
+# Build the image
+$ sudo docker build -t hello-python .
+
+# Run the container
+$ sudo docker run hello-python
+```
+
+<b> .NET solution <b>
+
+```bash
+$ mkdir -p ~/exercise-2
+$ cd ~/exercise-2
+
+# Create a .NET hello-world app
+$ cat <<EOF > Helloworld.cs
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello from Docker (.NET)!");
+    }
+}
+EOF
+
+# Create the Dockerfile
+$ cat <<EOF > Dockerfile
+# Build stage using dotnet sdk image
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /app
+COPY . ./
+RUN dotnet publish -c Release -o out
+
+# Runtime stage using slimmer runtime image
+FROM mcr.microsoft.com/dotnet/runtime:8.0
+WORKDIR /app
+COPY --from=build /app/out .
+ENTRYPOINT ["dotnet", "exercise-2-dotnet.dll"]
+EOF
+
+# Build the image
+sudo docker build -t hello-dotnet .
+
+# Run the container
+sudo docker run hello-dotnet
+```
 
 ### Solution 3
 
-tilføj her.
+```bash
+$ sudo docker pull bitnami/postgresql
+$ sudo docker images [list] [-a]
+$ sudo docker pull bitnami/postgresql:17.5.0-debian-12-r10
+$ sudo docker images [list] [-a]
+$ sudo docker rmi bitnami/postgresql:17.5.0-debian-12-r10
+$ sudo docker images [list] [-a]
+$ sudo docker tag bitnami/postgresql bitnami/postgresql:mytag
+$ sudo docker images [list] [-a]
+```
 
 ### Solution 4
 
