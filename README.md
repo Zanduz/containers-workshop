@@ -6,54 +6,72 @@ Solutions are given at the bottom, but you are encouraged to try to do the exerc
 
 ## Setup
 
-It is assumed that Windows is the platform used.
+It is assumed that Windows is used and that neither WSL nor Docker is installed on the system.
 
 <b> Step 1: Install Linux (via WSL) </b>
 
-Start by installing WSL (Windows Subsystem for Linux).  
-Open PowerShell as Administrator and run the following command. Expect a reboot after installation:
+Start by installing WSL (Windows Subsystem for Linux). More information can be found [here](https://learn.microsoft.com/en-us/windows/wsl/install).
+
+Open PowerShell as Administrator and run the following command:
 
 ```ps
-wsl --install
+> wsl --install
 ```
 
-More information can be found [here](https://learn.microsoft.com/en-us/windows/wsl/install). 
+Reboot your machine. Once rebooted, the installation will proceed and may take some time. You will be prompted to create a username and password — make sure to remember them, as they’ll be required for certain commands.
 
-After installation, restart your computer. Once restarted, open PowerShell again and install Ubuntu with the following command:
+Following a successful installation, you should see a Linux terminal.
+
+If a Linux distribution is not installed in WSL, then run:
 
 ```ps
-wsl --install --ubuntu
+> wsl --install -d ubuntu
 ```
 
-The installation may take a few minutes.  
-You will be prompted to create a username and password — make sure to remember them, as they’ll be required for certain commands.
+You may need to reboot once more.
 
-After installation, you’ll be in a Linux terminal.
-Going forward, you can also launch the Linux terminal (Bash) from any folder by running :
+Going forward, you can also launch the Linux terminal (bash) from any folder by running:
 
 ```ps
-bash
+> bash
 ```
 
 in either PowerShell or CMD.
 
 <b> Step 2: Install Docker </b>
 
-By default, Ubuntu does not come with Docker pre-installed.
+By default, Ubuntu does not come with Docker pre-installed. Follow the below steps from [the official guide](https://docs.docker.com/engine/install/ubuntu/) to install Docker on Ubuntu.
 
-Follow [this guide](https://docs.docker.com/engine/install/ubuntu/) to install Docker on Ubuntu.
+```bash
+# Add Docker's official GPG key:
+$ sudo apt update
+$ sudo apt install ca-certificates curl
+$ sudo install -m 0755 -d /etc/apt/keyrings
+$ sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+$ sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add the repository to Apt sources:
+$ echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+$ sudo apt update
+
+
+$ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
 
 <b> Step 3: Verify the Docker Installation </b>
 
 You can verify that Docker is working by running:
 
 ```bash
-sudo docker run hello-world
+$ sudo docker run hello-world
 ```
 
-in the Linux terminal (Bash).
+in the Linux terminal (bash).
 
-This command pulls the `hello-world` image from the Internet and instantiates a container from it.
+This command pulls the `hello-world` image from the Internet (Docker Hub) and instantiates a container from it.
 
 The console output is expected to look like:
 
@@ -108,7 +126,9 @@ The purpose of this exercise is to try to build your own image and run it and th
 3. Create a Dockerfile and base it on the runtime Docker image.
 4. Copy the application into the image.
 5. Make sure your Dockerfile executes the application.
-6. Build the image and run it.
+6. Build the image.
+7. Check the image has been added to your local image registry.
+8. Run a container from the image.
 
 ```bash
 $ docker build -t my-python-app .
@@ -169,6 +189,9 @@ EOF
 
 # Build the image
 $ sudo docker build -t hello-python .
+
+# Check the local registry
+$ sudo docker images
 
 # Run the container
 $ sudo docker run hello-python
