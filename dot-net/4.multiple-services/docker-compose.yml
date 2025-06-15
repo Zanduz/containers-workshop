@@ -1,0 +1,34 @@
+networks:
+  local_network:
+    driver: bridge
+
+services:
+  hello-dotnet:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hello-dotnet
+    image: hello-dotnet:latest
+    depends_on:
+      - database
+    environment:
+      ConnectionStrings__DefaultConnection: Host=database;Port=5432;Username=helloworld;Password=helloworld;Database=hellodb
+    networks:
+      - local_network
+
+  database:
+    # https://hub.docker.com/_/postgres
+    image: postgres:17.5-alpine
+    environment:
+      POSTGRES_USER: helloworld
+      POSTGRES_PASSWORD: helloworld
+      POSTGRES_DB: hellodb
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - local_network
+
+volumes:
+  postgres_data:
