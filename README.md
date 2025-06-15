@@ -126,14 +126,10 @@ The purpose of this exercise is to try to build your own image and run it and th
 3. Create a Dockerfile and base it on the runtime Docker image.
 4. Copy the application into the image.
 5. Make sure your Dockerfile executes the application.
-6. Build the image.
-7. Check the image has been added to your local image registry.
+6. Build the image with a fitting tag of your choice.
+7. Check your local image registry to see that the image has been added there.
 8. Run a container from the image.
-
-```bash
-$ docker build -t my-python-app .
-$ docker run -it --rm --name my-running-app my-python-app
-```
+9. List all containers, including stopped/exited ones.
 
 ### Exercise 3: Local registry and tags
 
@@ -192,6 +188,9 @@ $ sudo docker images
 
 # Run the container
 $ sudo docker run hello-python
+
+# List all containers, including stopped/exited ones.
+$ sudo docker ps -a
 ```
 
 <b> .NET solution <b>
@@ -229,10 +228,13 @@ ENTRYPOINT ["dotnet", "exercise-2-dotnet.dll"]
 EOF
 
 # Build the image
-sudo docker build -t hello-dotnet .
+$ sudo docker build -t hello-dotnet .
 
 # Run the container
-sudo docker run hello-dotnet
+$ sudo docker run hello-dotnet
+
+# List all containers, including stopped/exited ones.
+$ sudo docker ps -a
 ```
 
 ### Solution 3
