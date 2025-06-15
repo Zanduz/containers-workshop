@@ -1,0 +1,7 @@
+services:
+  hello-dotnet:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hello-dotnet
+    image: hello-dotnet:latest
