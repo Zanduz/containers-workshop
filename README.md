@@ -153,47 +153,15 @@ exercise-4/
 └── docker-compose.yml
 ```
 
-3. Define the `version`, `services`, `volumes` and `networks` sections of the `docker-compose.yml` file.
-4. Bring up the containers using `docker compose up --build`.
-   
+3. Give the application's service stack a name by adding the `name: <name>` key-value pair at the top of the `docker-compose.yml` file.
+4. Define the application's service stack (`services` [section](https://docs.docker.com/compose/gettingstarted/#step-2-define-services-in-a-compose-file)) of the `docker-compose.yml` file.
+5. Build the images and bring up the containers using `docker compose up --build`.
+
 ## Solutions
 
 ### Solution 2
 
-<b> Python solution <b>
-
-```bash
-# Create the exercise directory
-$ mkdir -p ~/exercise-2
-$ cd ~/exercise-2
-
-# Create a Python hello-world app
-$ cat <<EOF > app.py
-print("Hello from Docker!")
-EOF
-
-# Create the Dockerfile
-$ cat <<EOF > Dockerfile
-FROM python:3-slim
-WORKDIR /app
-COPY app.py .
-CMD ["python", "app.py"]
-EOF
-
-# Build the image
-$ sudo docker build -t hello-python .
-
-# Check the local registry
-$ sudo docker images
-
-# Run the container
-$ sudo docker run hello-python
-
-# List all containers, including stopped/exited ones.
-$ sudo docker ps -a
-```
-
-<b> .NET solution <b>
+#### .NET solution
 
 ```bash
 $ mkdir -p ~/exercise-2
@@ -232,6 +200,39 @@ $ sudo docker build -t hello-dotnet .
 
 # Run the container
 $ sudo docker run hello-dotnet
+
+# List all containers, including stopped/exited ones.
+$ sudo docker ps -a
+```
+
+#### Python solution
+
+```bash
+# Create the exercise directory
+$ mkdir -p ~/exercise-2
+$ cd ~/exercise-2
+
+# Create a Python hello-world app
+$ cat <<EOF > app.py
+print("Hello from Docker!")
+EOF
+
+# Create the Dockerfile
+$ cat <<EOF > Dockerfile
+FROM python:3-slim
+WORKDIR /app
+COPY app.py .
+CMD ["python", "app.py"]
+EOF
+
+# Build the image
+$ sudo docker build -t hello-python .
+
+# Check the local registry
+$ sudo docker images
+
+# Run the container
+$ sudo docker run hello-python
 
 # List all containers, including stopped/exited ones.
 $ sudo docker ps -a
