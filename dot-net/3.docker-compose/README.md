@@ -17,3 +17,4 @@ services:
 ```
 
 This time, the application is built with `sudo docker compose build` and run with `sudo docker compose up`.
+Build and run can be combined with `sudo docker compose up --build`.
