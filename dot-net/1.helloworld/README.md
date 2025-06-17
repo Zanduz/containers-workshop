@@ -1,4 +1,4 @@
-# Simple hello world aplication
+# Simple hello world application
 
 Project is created with `sudo docker run --workdir /HelloWorldApp --volume $PWD:/HelloWorldApp:rw mcr.microsoft.com/dotnet/sdk:8.0 dotnet new console`.
 
