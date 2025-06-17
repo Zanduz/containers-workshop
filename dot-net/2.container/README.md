@@ -30,3 +30,5 @@ To create the container image, run `sudo docker build --tag hello-dotnet .`.
 The container image can be listed with `sudo docker image ls`. The image got tagged with the version `latest` by default. Changing the image version is done by adding colon+version to the `--tag` option like this `sudo docker build --tag hello-dotnet:1.0.0 .`, where the version is `1.0.0`.
 
 It is possible to add multiple versions/tags to the same image. This is done with `sudo docker tag hello-dotnet:1.0.0 hello-dotnet:1.0` which tags the `hello-dotnet:1.0.0` with the version `1.0`. Now `sudo docker image ls` shows both image versions, and importantly, they have the same `IMAGE ID`. I.e. they point to exactly the same image.
+
+To run the container, use the command `sudo docker run hello-dotnet`.
