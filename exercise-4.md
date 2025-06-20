@@ -1,20 +1,27 @@
 # Exercise 4: Orchestrate development environment
 
-1. Create a new directory for this exercise, e.g. `/~/exercise-4` and move into it. Alternatively, make a copy of the exercise-2 folder.
-2. Create the following file-structure:
+## Objective
 
-```txt
-exercise-4/
-├── app/
-│   └── app.py
-└── docker-compose.yml
-```
+Orchestrate development of application and container with docker compose.
 
-3. Give the application's service stack a name by adding the `name: <name>` key-value pair at the top of the `docker-compose.yml` file.
-4. Define the application's service stack (`services` [section](https://docs.docker.com/compose/gettingstarted/#step-2-define-services-in-a-compose-file)) of the `docker-compose.yml` file.
-5. Build the images and bring up the containers using `sudo docker compose up --build`.
+## Description
 
-Solution: [Solution 4](./solutions/dot-net/4.docker-compose/README.md)  
-Next exercise: [Exercise 5](./exercise-5.md)  
-Previous exercise: [Exercise 3](./exercise-3.md)  
+Docker compose can be used to remove a lot of boiler plate commands, and manage both build and execution of multiple services.
+
+To begin with we just wrap our newly created container in a docker compose configuration and test it.
+
+The initial docker compose file `docker-compose.yml` looks like this:
+
+Steps:
+
+* Create a `docker-compose.yml` file
+* Add a service `hello-dotnet`
+* specify that this service is built from local source with our `Dockerfile` ([see `services` section](https://docs.docker.com/compose/gettingstarted/#step-2-define-services-in-a-compose-file))
+* Specify the running containers name
+* Specify the name of the image being built
+* Test the application with `sudo docker compose up --build`
+
+Solution: [Solution 4](./solutions/dot-net/4.docker-compose/README.md)
+Next exercise: [Exercise 5](./exercise-5.md)
+Previous exercise: [Exercise 3](./exercise-3.md)
 Main readme: [Main readme](./README.md)
