@@ -91,7 +91,7 @@ If you see this message, then Docker is working correctly.
 
 [Exercise 0: Flight-check](./exercise-0.md)
 
-[Exercise 1: Prepare your own application or bring your own](./exercise-1.md)
+[Exercise 1: Create an application or bring your own](./exercise-1.md)
 
 [Exercise 2: Containerize your application](./exercise-2.md)
 
