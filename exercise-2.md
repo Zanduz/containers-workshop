@@ -16,7 +16,7 @@ Steps:
 8. Run a container from the image.
 9. List all containers, including stopped/exited ones.
 
-Solution: [Solution 2](./solutions/solution-2.md)  
+Solution: [Solution 2](./solutions/dot-net/2.container/README.md)  
 Next exercise: [Exercise 3](./exercise-3.md)  
 Previous exercise: [Exercise 1](./exercise-1.md)  
 Main readme: [Main readme](./README.md)
