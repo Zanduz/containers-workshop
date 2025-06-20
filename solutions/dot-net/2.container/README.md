@@ -31,7 +31,7 @@ The container image can be listed with `sudo docker image ls`. The image got tag
 
 It is possible to add multiple versions/tags to the same image. This is done with `sudo docker tag hello-dotnet:1.0.0 hello-dotnet:1.0` which tags the `hello-dotnet:1.0.0` with the version `1.0`. Now `sudo docker image ls` shows both image versions, and importantly, they have the same `IMAGE ID`. I.e. they point to exactly the same image.
 
-To run the container, use the command `sudo docker run hello-dotnet`.
+To run the container, run the command `sudo docker run hello-dotnet`.
 
 Exercise: [Exercise 2](.././../../exercise-2.md)  
 Next exercise: [Exercise 3](../../../exercise-3.md)  
