@@ -1,4 +1,4 @@
-# Exercise 1: Prepare your own application or bring your own
+# Exercise 0: Flight-check
 
 If you followed the setup steps and verified that you have a working instance of Docker on you machine, then you can skip this exercise. If you already may have a working instance of Docker on your machine and did not follow the setup steps above, then do this exercise.
 
@@ -26,7 +26,5 @@ Hello from Docker!...
 
 If you see this message, then Docker is working correctly.
 
-Solution: [Solution 1](./solutions/dot-net/1.helloworld/README.md)  
-Next exercise: [Exercise 2](./exercise-2.md)  
-Previous exercise: [Exercise 0](./exercise-0.md)  
+Next exercise: [Exercise 1](./exercise-1.md)  
 Main readme: [Main readme](./README.md)

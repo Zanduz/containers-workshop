@@ -4,7 +4,7 @@ The purpose of this exercise is to try to build your own image and run it and th
 
 1. Create a new directory somewhere in the WSL filesystem e.g. `/~/exercise-2` and move into it.
 2. Write a small hello-world application in a language of your choice (as long as there is a runtime Docker image for it, e.g. [Python](https://hub.docker.com/_/python) or [.NET](mcr.microsoft.com/dotnet/runtime:8.0.17)).
-3. Create a Dockerfile and base it on the runtime Docker image.
+3. Create a Dockerfile and base it on a runtime Docker image.
 4. Copy the application into the image.
 5. Make sure your Dockerfile executes the application.
 6. Build the image with a fitting tag of your choice.
