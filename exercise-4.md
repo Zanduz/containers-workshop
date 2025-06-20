@@ -21,7 +21,7 @@ Steps:
 * Specify the name of the image being built
 * Test the application with `sudo docker compose up --build`
 
-Solution: [Solution 4](./solutions/dot-net/4.docker-compose/README.md)
-Next exercise: [Exercise 5](./exercise-5.md)
-Previous exercise: [Exercise 3](./exercise-3.md)
+Solution: [Solution 4](./solutions/dot-net/4.docker-compose/README.md)  
+Next exercise: [Exercise 5](./exercise-5.md)  
+Previous exercise: [Exercise 3](./exercise-3.md)  
 Main readme: [Main readme](./README.md)
