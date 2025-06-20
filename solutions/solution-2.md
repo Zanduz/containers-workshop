@@ -7,6 +7,7 @@
 $ mkdir -p ~/exercise-2
 $ cd ~/exercise-2
 
+# Create a .NET project file
 $ cat <<EOF > HelloWorldApp.csproj
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
