@@ -13,6 +13,7 @@ Steps:
   * With network
   * With dependencies
   * Expose port 3000
+* Test with e.g. `curl http://localhost:3000`
 
 ## Hints
 
