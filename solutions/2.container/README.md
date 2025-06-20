@@ -5,19 +5,19 @@ Reusing everything from `1.helloworld`, adding a `Dockerfile` with the content b
 Dockerfile:
 
 ```Dockerfile
-# Trin 1: Build
+# Step 1: Build
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
-# Kopiér csproj og genskab afhængigheder
+# Copy csproj and restore dependencies
 COPY *.csproj ./
 RUN dotnet restore
 
-# Kopiér resten og byg
+# Copy the rest and build
 COPY . ./
 RUN dotnet publish -c Release -o out
 
-# Trin 2: Runtime
+# Step 2: Runtime
 FROM mcr.microsoft.com/dotnet/runtime:8.0
 WORKDIR /app
 COPY --from=build /app/out ./
@@ -33,7 +33,9 @@ It is possible to add multiple versions/tags to the same image. This is done wit
 
 To run the container, run the command `sudo docker run hello-dotnet`.
 
-Exercise: [Exercise 2](.././../../exercise-2.md)  
-Next exercise: [Exercise 3](../../../exercise-3.md)  
-Previous exercise: [Exercise 1](../../../exercise-1.md)  
-Main readme: [Main readme](../../../README.md)
+To list all containers, including stopped/exited ones, run `sudo docker ps -a`.
+
+Exercise: [Exercise 2](../../exercise-2.md)  
+Next exercise: [Exercise 3](../../exercise-3.md)  
+Previous exercise: [Exercise 1](../../exercise-1.md)  
+Main readme: [Main readme](../../README.md)
