@@ -1,4 +1,4 @@
-# Multiple services
+# Solution 5: Add a database
 
 Docker compose makes it easy to manage multiple dependencies of the application you develop.
 
@@ -68,3 +68,8 @@ When we have updated our application code to utilize the database, we can re-com
 We can now ask for our application log with `sudo docker compose logs hello-dotnet`.
 
 We can also see the running services with `sudo docker compose ps --all`. Notice that our application stopped running, while postgresql continues to run.
+
+Link to exercise: [Exercise 5](../exercise-5.md)  
+Next exercise: [Exercise 6](../exercise-6.md)  
+Previous exercise: [Exercise 4](../exercise-4.md)  
+Main readme: [Main readme](../README.md)

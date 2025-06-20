@@ -1,5 +1,5 @@
 
-# Solution 2
+# Solution 2: Containerize your application
 
 # .NET solution
 
@@ -77,3 +77,8 @@ $ sudo docker run hello-python
 # List all containers, including stopped/exited ones.
 $ sudo docker ps -a
 ```
+
+Link to exercise: [Exercise 2](../exercise-2.md)  
+Next exercise: [Exercise 3](../exercise-3.md)  
+Previous exercise: [Exercise 1](../exercise-1.md)  
+Main readme: [Main readme](../README.md)

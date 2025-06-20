@@ -8,4 +8,7 @@
 6. Tag the image you built in the previous exercise with a tag of your choice.
 7. List all images in your local registry again. What do you see now?
 
-Link to solution: [Solution 3](./solutions/solution-3.md)
+Solution: [Solution 3](./solutions/solution-3.md)  
+Next exercise: [Exercise 4](./exercise-4.md)  
+Previous exercise: [Exercise 2](./exercise-2.md)  
+Main readme: [Main readme](./README.md)

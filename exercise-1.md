@@ -26,5 +26,5 @@ Hello from Docker!...
 
 If you see this message, then Docker is working correctly.
 
-# Solution
-
+Next exercise: [Exercise 2](./exercise-2.md)  
+Main readme: [Main readme](./README.md)
