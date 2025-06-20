@@ -4,7 +4,7 @@
 
 The purpose of this exercise is to try to build your own image and run it and thereby get familiar with the duality of images and containers.
 
-Steps:
+## Steps
 
 1. Continue with the application from the previous exercise.
 2. Create a Dockerfile and base it on a fitting SDK Docker image. Name this image 'build'.

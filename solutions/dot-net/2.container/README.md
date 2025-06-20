@@ -1,4 +1,4 @@
-# Solution 2: Containerizing the simple hello world program
+# Solution 2: Containerize your application
 
 Reusing everything from `1.helloworld`, adding a `Dockerfile` with the content below, enables us to containerize our application.
 

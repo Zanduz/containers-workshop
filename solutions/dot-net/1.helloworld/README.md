@@ -1,4 +1,4 @@
-# Solution 1: Prepare your own application or bring your own
+# Solution 1: Create an application or bring your own
 
 The project and filesystem is created with `sudo docker run --workdir /HelloWorldApp --volume $PWD:/HelloWorldApp:rw mcr.microsoft.com/dotnet/sdk:8.0 dotnet new console`.
 

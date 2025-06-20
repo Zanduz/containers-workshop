@@ -1,14 +1,14 @@
-# Exercise 1: Prepare your own application or bring your own
+# Exercise 1: Create an application or bring your own
 
 ## Objective
 
 Initialize a new .NET application.
 
-Steps:
+## Steps
 
-* Initialize a new .NET console application
+* Initialize a new .NET console application.
 * Make the application print e.g. "Hello, World!"
-* Test that the console application builds, runs and prints the expected string
+* Test that the console application builds, runs and prints the expected string.
 
 Solution: [Solution 1](./solutions/dot-net/1.helloworld/README.md)  
 Next exercise: [Exercise 2](./exercise-2.md)  
