@@ -155,7 +155,7 @@ exercise-4/
 
 3. Give the application's service stack a name by adding the `name: <name>` key-value pair at the top of the `docker-compose.yml` file.
 4. Define the application's service stack (`services` [section](https://docs.docker.com/compose/gettingstarted/#step-2-define-services-in-a-compose-file)) of the `docker-compose.yml` file.
-5. Build the images and bring up the containers using `docker compose up --build`.
+5. Build the images and bring up the containers using `sudo docker compose up --build`.
 
 ## Solutions
 
