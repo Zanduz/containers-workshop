@@ -2,7 +2,7 @@
 
 ## Objective
 
-Become familiar with image names and docker hub
+Become familiar with image names and docker hub.
 
 Steps:
 

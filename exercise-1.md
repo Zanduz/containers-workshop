@@ -2,7 +2,7 @@
 
 ## Objective
 
-Initialize a new .NET application
+Initialize a new .NET application.
 
 Steps:
 
