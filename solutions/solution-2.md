@@ -1,11 +1,22 @@
 
 # Solution 2: Containerize your application
 
-# .NET solution
+## .NET solution
 
 ```bash
 $ mkdir -p ~/exercise-2
 $ cd ~/exercise-2
+
+$ cat <<EOF > HelloWorldApp.csproj
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+</Project>
+EOF
 
 # Create a .NET hello-world app
 $ cat <<EOF > Helloworld.cs
@@ -45,7 +56,7 @@ $ sudo docker run hello-dotnet
 $ sudo docker ps -a
 ```
 
-# Python solution
+## Python solution
 
 ```bash
 # Create the exercise directory
@@ -78,7 +89,7 @@ $ sudo docker run hello-python
 $ sudo docker ps -a
 ```
 
-Link to exercise: [Exercise 2](../exercise-2.md)  
-Next exercise: [Exercise 3](../exercise-3.md)  
-Previous exercise: [Exercise 1](../exercise-1.md)  
+Link to exercise: [Exercise 2](../exercise-2.md)
+Next exercise: [Exercise 3](../exercise-3.md)
+Previous exercise: [Exercise 1](../exercise-1.md)
 Main readme: [Main readme](../README.md)
