@@ -21,6 +21,6 @@ Steps:
   * `./frontend/package.json` - Configuration of Node.js
   * `./frontend/index.js` - Node.js application
 
-Solution: [Solution 6](./solutions/dot-net/6.web-example/README.md)  
-Previous exercise: [Exercise 5](./exercise-5.md)  
+Solution: [Solution 6](./solutions/dot-net/6.web-example/README.md)
+Previous exercise: [Exercise 5](./exercise-5.md)
 Main readme: [Main readme](./README.md)
