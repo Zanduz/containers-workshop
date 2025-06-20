@@ -2,9 +2,9 @@
 
 ## Objective
 
-Become familiar with image names and docker hub.
+Become familiar with image tags/versions and Docker Hub.
 
-Steps:
+## Steps
 
 1. Pull an image you have not yet worked with from the [Docker hub](https://hub.docker.com), e.g. [PostgresSQL](https://hub.docker.com/r/bitnami/postgresql).
 2. List all images in your local registry.
@@ -14,7 +14,7 @@ Steps:
 6. Tag the image you built in the previous exercise with a tag of your choice.
 7. List all images in your local registry again. What do you see now?
 
-Solution: [Solution 3](./solutions/dot-net/3.hub-and-tags/README.md)  
+Solution: [Solution 3](./solutions/3.hub-and-tags/README.md)  
 Next exercise: [Exercise 4](./exercise-4.md)  
 Previous exercise: [Exercise 2](./exercise-2.md)  
 Main readme: [Main readme](./README.md)
