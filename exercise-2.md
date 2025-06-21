@@ -20,6 +20,8 @@ The purpose of this exercise is to try to build your own image and run it and th
 5. Run a container from the image.
 6. List all containers, including stopped/exited ones.
 
+## Navigation
+
 Solution: [Solution 2](./solutions/2.container/README.md)  
 Next exercise: [Exercise 3](./exercise-3.md)  
 Previous exercise: [Exercise 1](./exercise-1.md)  

@@ -1,8 +1,12 @@
 # Exercise 0: Flight-check
 
+## Objective
+
 If you followed the setup steps and verified that you have a working instance of Docker on you machine, then you can skip this exercise. If you already may have a working instance of Docker on your machine and did not follow the setup steps above, then do this exercise.
 
 The purpose of this execise is to try the `run` sub-command and to do a flight-check.
+
+## Steps
 
 1. Run the following command in the Linux terminal:
 
@@ -25,6 +29,8 @@ Hello from Docker!...
 ```
 
 If you see this message, then Docker is working correctly.
+
+## Navigation
 
 Next exercise: [Exercise 1](./exercise-1.md)  
 Main readme: [Main readme](./README.md)

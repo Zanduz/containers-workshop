@@ -35,6 +35,8 @@ To run the container, run the command `sudo docker run hello-dotnet`.
 
 To list all containers, including stopped/exited ones, run `sudo docker ps -a`.
 
+## Navigation
+
 Exercise: [Exercise 2](../../exercise-2.md)  
 Next exercise: [Exercise 3](../../exercise-3.md)  
 Previous exercise: [Exercise 1](../../exercise-1.md)  

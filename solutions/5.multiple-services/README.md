@@ -69,6 +69,8 @@ We can now ask for our application log with `sudo docker compose logs hello-dotn
 
 We can also see the running services with `sudo docker compose ps --all`. Notice that our application stopped running, while postgresql continues to run.
 
+## Navigation
+
 Link to exercise: [Exercise 5](../../exercise-5.md)  
 Next exercise: [Exercise 6](../../exercise-6.md)  
 Previous exercise: [Exercise 4](../../exercise-4.md)  

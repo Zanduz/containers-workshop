@@ -10,6 +10,8 @@ Initialize a new .NET application.
 * Make the application print e.g. "Hello, World!"
 * Test that the console application builds, runs and prints the expected string.
 
+## Navigation
+
 Solution: [Solution 1](./solutions/1.helloworld/README.md)  
 Next exercise: [Exercise 2](./exercise-2.md)  
 Previous exercise: [Exercise 0](./exercise-0.md)  

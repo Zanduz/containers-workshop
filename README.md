@@ -89,16 +89,10 @@ If you see this message, then Docker is working correctly.
 
 ## Exercises
 
-[Exercise 0: Flight-check](./exercise-0.md)
-
-[Exercise 1: Create an application or bring your own](./exercise-1.md)
-
-[Exercise 2: Containerize your application](./exercise-2.md)
-
-[Exercise 3: Work with Docker Hub and inspect your local Docker environment](./exercise-3.md)
-
-[Exercise 4: Orchestrate development environment](./exercise-4.md)
-
-[Exercise 5: Add a database](./exercise-5.md)
-
-[Exercise 6: Add a front end](./exercise-6.md)
+[Exercise 0: Flight-check](./exercise-0.md)  
+[Exercise 1: Create an application or bring your own](./exercise-1.md)  
+[Exercise 2: Containerize your application](./exercise-2.md)  
+[Exercise 3: Work with Docker Hub and inspect your local Docker environment](./exercise-3.md)  
+[Exercise 4: Orchestrate development environment](./exercise-4.md)  
+[Exercise 5: Add a database](./exercise-5.md)  
+[Exercise 6: Add a front end](./exercise-6.md)  

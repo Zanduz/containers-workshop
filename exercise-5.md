@@ -10,6 +10,8 @@ Convert the .NET app into a minimal Web API that returns the database message as
 2. Query the DB and return JSON data.
 3. Expose port 8080 and test with browser/Postman.
 
+## Navigation
+
 Solution: [Solution 5](./solutions/5.multiple-services/README.md)  
 Next exercise: [Exercise 6](./exercise-6.md)  
 Previous exercise: [Exercise 4](./exercise-4.md)  

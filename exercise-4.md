@@ -21,6 +21,8 @@ The initial docker compose file `docker-compose.yml` looks like this:
 5. Specify the name of the image being built.
 6. Test the application with `sudo docker compose up --build`.
 
+## Navigation
+
 Solution: [Solution 4](./solutions/4.docker-compose/README.md)  
 Next exercise: [Exercise 5](./exercise-5.md)  
 Previous exercise: [Exercise 3](./exercise-3.md)  

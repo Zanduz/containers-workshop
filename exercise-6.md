@@ -23,6 +23,8 @@ Create a folder for the front end code and configuration:
 * `./frontend/package.json` - Configuration of Node.js
 * `./frontend/index.js` - Node.js application
 
+## Navigation
+
 Solution: [Solution 6](./solutions/6.web-example/README.md)  
 Previous exercise: [Exercise 5](./exercise-5.md)  
 Main readme: [Main readme](./README.md)

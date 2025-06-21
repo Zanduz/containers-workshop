@@ -20,6 +20,8 @@ class Program
 
 Build and run the container with `sudo docker run --workdir /HelloWorldApp --volume $PWD:/HelloWorldApp:rw mcr.microsoft.com/dotnet/sdk:8.0 dotnet run`.
 
+## Navigation
+
 Link to exercise: [Exercise 1](../../exercise-1.md)  
 Next exercise: [Exercise 2](../../exercise-2.md)  
 Previous exercise: [Exercise 0](../../exercise-0.md)  
