@@ -19,7 +19,11 @@ services:
 This time, the application is built with `sudo docker compose build` and run with `sudo docker compose up`.
 Build and run can be combined with `sudo docker compose up --build`.
 
+Check the containers in the compose-deployment with `sudo docker compose ps -a`.
+
 Bring down the deployment again with `sudo docker compose down`.
+
+Check that the containers in the compose-deployment have been removed, again with `sudo docker compose ps -a`.
 
 ## Navigation
 
