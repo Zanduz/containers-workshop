@@ -20,6 +20,7 @@ The initial docker compose file `docker-compose.yml` looks like this:
 4. Specify the running containers name.
 5. Specify the name of the image being built.
 6. Test the application with `sudo docker compose up --build`.
+7. Make sure to bring down the deployment again with `sudo docker compose down` when done.
 
 ## Navigation
 

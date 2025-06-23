@@ -19,6 +19,8 @@ services:
 This time, the application is built with `sudo docker compose build` and run with `sudo docker compose up`.
 Build and run can be combined with `sudo docker compose up --build`.
 
+Bring down the deployment again with `sudo docker compose down`.
+
 ## Navigation
 
 Link to exercise: [Exercise 4](../../exercise-4.md)  
