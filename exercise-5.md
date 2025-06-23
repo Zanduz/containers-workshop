@@ -10,6 +10,10 @@ Convert the .NET app into a minimal Web API that returns the database message as
 2. Query the DB and return JSON data.
 3. Expose port 8080 and test with browser/Postman.
 
+We can also ask for our application log with `sudo docker compose logs hello-dotnet`.
+
+Make sure to bring down the deployment again with `sudo docker compose down` when done.
+
 ## Navigation
 
 Solution: [Solution 5](./solutions/5.multiple-services/README.md)  

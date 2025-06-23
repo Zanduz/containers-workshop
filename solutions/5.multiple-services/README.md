@@ -63,6 +63,44 @@ volumes:
   postgres_data:
 ```
 
+The complete docker-compose.yml file looks like the following:
+```yaml
+services:
+  hello-dotnet:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hello-dotnet
+    image: hello-dotnet:latest
+    networks:
+      - local_network
+    depends_on:
+      - database
+    environment:
+      ConnectionStrings__DefaultConnection: Host=database;Port=5432;Username=helloworld;Password=helloworld;Datab>
+
+  database:
+    # https://hub.docker.com/_/postgres
+    image: postgres:17.5-alpine
+    environment:
+      POSTGRES_USER: helloworld
+      POSTGRES_PASSWORD: helloworld
+      POSTGRES_DB: hellodb
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - local_network
+
+networks:
+  local_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+```
+
 When we have updated our application code to utilize the database, we can re-compile `sudo docker compose build` and run `sudo docker compose up --detach`. This time we choose to `--detach` the servies from the console output, otherwise our console would be tied to the running services (postgresql does not stop unless asked to).
 
 We can now ask for our application log with `sudo docker compose logs hello-dotnet`.
