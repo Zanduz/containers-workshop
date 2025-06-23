@@ -2,13 +2,14 @@
 
 ## Objective
 
-Convert the .NET app into a minimal Web API that returns the database message as JSON.
+Convert the .NET app such that it returns the message with data from the database.
 
 ## Steps
 
-1. Replace console logic with a Web API using MapGet("/").
-2. Query the DB and return JSON data.
-3. Expose port 8080 and test with browser/Postman.
+1. Add a postgresql database container to `docker-compose.yml`.
+2. Modify C# code to Query the DB and return JSON data.
+
+Ensure that the containers can communicate on the same network, that the database has persistent storage, that the database gets initialized with some data, and the application prints data from the database.
 
 We can also ask for our application log with `sudo docker compose logs hello-dotnet`.
 
